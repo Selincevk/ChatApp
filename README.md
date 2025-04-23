@@ -1,13 +1,40 @@
-# React + Vite
+<h1>Chat App</h1>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, kullanıcıların gerçek zamanlı olarak mesajlaşabileceği bir sohbet uygulamasıdır. Firebase altyapısı kullanılarak geliştirilmiş olup, kullanıcı doğrulama, mesaj gönderme, emoji desteği, bildirim sesi ve okunmayan mesaj bildirimi gibi birçok işlevi barındırır.
 
-Currently, two official plugins are available:
+<h1>Özellikler</h1>
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🔐**Google ile Giriş:** Firebase Auth ile güvenli kullanıcı girişi
+- 💬 **Gerçek Zamanlı Mesajlaşma:** Firebase Firestore ile canlı mesaj akışı
+- 😄 **Emoji Desteği:** Emoji picker ile mesaja emoji ekleme
+- 🔔 **Bildirim Sesi:** Yeni mesaj geldiğinde sesli bildirim
+- 📌 **Scroll Takibi:** Otomatik aşağı kaydırma ve okunmayan mesaj bildirimi
+- 👤 **Profil Görseli:** Kullanıcının Google profil fotoğrafı ile mesaj gösterimi
+- 🧭 **Farklı Oda Desteği:** Farklı sohbet odaları arasında geçiş
+- 🧪 **Responsive ve Temiz Arayüz:** TailwindCSS ile mobil uyumlu tasarım
 
-## Expanding the ESLint configuration
+<h1>Kullanılan Teknolojiler</h1>
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# ChatApp
+- **React** – UI bileşenleri için
+- **Firebase (Auth & Firestore)** – Gerçek zamanlı veritabanı ve kullanıcı yönetimi
+- **React Router** – Sayfa yönlendirmeleri
+- **Tailwind CSS** – Modern ve responsive stil
+- **Emoji Picker** – Emoji desteği için harici kütüphane
+
+
+<h1>Dosya Yapısı 📁</h1>
+src/
+├── components/
+│   ├── Arrow.jsx
+│   ├── Form.jsx
+│   ├── Header.jsx
+│   ├── List.jsx
+│   ├── Message.jsx
+│   └── Protected.jsx
+├── firebase.js
+├── App.js
+└── index.js
+
+<h1>DEMO</h1>
+
+![](/demo.gif)
